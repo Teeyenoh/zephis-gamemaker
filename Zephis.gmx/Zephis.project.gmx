@@ -20,6 +20,10 @@
       <sprite>sprites\spr_food</sprite>
       <sprite>sprites\spr_toys</sprite>
     </sprites>
+    <sprite>sprites\spr_block_up</sprite>
+    <sprite>sprites\spr_block_left</sprite>
+    <sprite>sprites\spr_block_down</sprite>
+    <sprite>sprites\spr_block_right</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass</background>
@@ -39,6 +43,12 @@
     </objects>
     <object>objects\obj_camera</object>
     <object>objects\obj_player</object>
+    <objects name="object">
+      <object>objects\obj_block_up</object>
+      <object>objects\obj_block_left</object>
+      <object>objects\obj_block_down</object>
+      <object>objects\obj_block_right</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\testRoom</room>

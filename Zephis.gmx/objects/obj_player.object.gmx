@@ -63,32 +63,38 @@ image_speed = 30;
           <argument>
             <kind>1</kind>
             <string>if (isMoving == false &amp;&amp; nextDirection != -1) {
-    isMoving = true;
-    moveTimer = gridSize;
-    facingDirection = nextDirection;
-    nextDirection = -1;
+    moveUp = (nextDirection == DIRECTION_UP) &amp;&amp; (position_meeting(x + 16, y  + 16, obj_block_up) == false); 
+    moveLeft = (nextDirection == DIRECTION_LEFT) &amp;&amp; (position_meeting(x + 16, y  + 16, obj_block_left) == false); 
+    moveDown = (nextDirection == DIRECTION_DOWN) &amp;&amp; (position_meeting(x + 16, y  + 16, obj_block_down) == false); 
+    moveRight = (nextDirection == DIRECTION_RIGHT) &amp;&amp; (position_meeting(x + 16, y  + 16, obj_block_right) == false); 
+    if (moveUp || moveLeft || moveDown || moveRight) {
+        isMoving = true;
+        moveTimer = gridSize;
+        facingDirection = nextDirection;
+        nextDirection = -1;
+    }
 }
 
 if (isMoving == false) {
-    if (keyboard_check(vk_up)) {
+    if (keyboard_check(vk_up) &amp;&amp; position_meeting(x + 16, y + 16, obj_block_up) == false) {
         isMoving = true;
         moveTimer = gridSize;
         facingDirection = DIRECTION_UP;
     }  
     
-    if (keyboard_check(vk_left)) {
+    if (keyboard_check(vk_left) &amp;&amp; position_meeting(x + 16, y + 16, obj_block_left) == false) {
         isMoving = true;
         moveTimer = gridSize;
         facingDirection = DIRECTION_LEFT;
     }  
     
-    if (keyboard_check(vk_down)) {
+    if (keyboard_check(vk_down) &amp;&amp; position_meeting(x + 16, y + 16, obj_block_down) == false) {
         isMoving = true;
         moveTimer = gridSize;
         facingDirection = DIRECTION_DOWN;
     }  
     
-    if (keyboard_check(vk_right)) {
+    if (keyboard_check(vk_right) &amp;&amp; position_meeting(x + 16, y + 16, obj_block_right) == false) {
         isMoving = true;
         moveTimer = gridSize;
         facingDirection = DIRECTION_RIGHT;
@@ -133,25 +139,11 @@ if (isMoving == true) {
         isMoving = false;
     }
 }
+
+depth = floor(-y / 32);
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>500</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring>draw_self();</codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
