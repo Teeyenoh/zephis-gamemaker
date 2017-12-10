@@ -6,12 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="animal">
-      <sprites name="bee">
-        <sprites name="bumble">
-          <sprite>sprites\animal_bee_bumble_giant_stand_down</sprite>
+    <sprites name="creature">
+      <sprites name="animal">
+        <sprites name="bee">
+          <sprites name="bumble">
+            <sprite>sprites\animal_bee_bumble_giant_stand_down</sprite>
+          </sprites>
         </sprites>
       </sprites>
+    </sprites>
+    <sprites name="item">
+      <sprite>sprites\ingots</sprite>
+      <sprite>sprites\food</sprite>
+      <sprite>sprites\toys</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -21,10 +28,12 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <objects name="animal">
-      <objects name="bee">
-        <objects name="bumble">
-          <object>objects\animal_bee_bumble_giant</object>
+    <objects name="creature">
+      <objects name="animal">
+        <objects name="bee">
+          <objects name="bumble">
+            <object>objects\animal_bee_bumble_giant</object>
+          </objects>
         </objects>
       </objects>
     </objects>
