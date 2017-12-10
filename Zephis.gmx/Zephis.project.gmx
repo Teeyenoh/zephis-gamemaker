@@ -21,7 +21,13 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\animal_bee_bumble_giant</object>
+    <objects name="animal">
+      <objects name="bee">
+        <objects name="bumble">
+          <object>objects\animal_bee_bumble_giant</object>
+        </objects>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\testRoom</room>
