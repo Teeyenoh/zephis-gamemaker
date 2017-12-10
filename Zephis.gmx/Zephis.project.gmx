@@ -10,15 +10,15 @@
       <sprites name="animal">
         <sprites name="bee">
           <sprites name="bumble">
-            <sprite>sprites\animal_bee_bumble_giant_stand_down</sprite>
+            <sprite>sprites\spr_animal_bee_bumble_giant_stand_down</sprite>
           </sprites>
         </sprites>
       </sprites>
     </sprites>
     <sprites name="item">
-      <sprite>sprites\ingots</sprite>
-      <sprite>sprites\food</sprite>
-      <sprite>sprites\toys</sprite>
+      <sprite>sprites\spr_ingots</sprite>
+      <sprite>sprites\spr_food</sprite>
+      <sprite>sprites\spr_toys</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -32,11 +32,13 @@
       <objects name="animal">
         <objects name="bee">
           <objects name="bumble">
-            <object>objects\animal_bee_bumble_giant</object>
+            <object>objects\obj_animal_bee_bumble_giant</object>
           </objects>
         </objects>
       </objects>
     </objects>
+    <object>objects\obj_camera</object>
+    <object>objects\obj_player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testRoom</room>
