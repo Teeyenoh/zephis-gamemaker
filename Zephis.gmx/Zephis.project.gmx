@@ -41,6 +41,7 @@
     <background>background\back_grass</background>
     <background>background\back_house</background>
     <background>background\back_wall_stone</background>
+    <background>background\back_cover</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -70,6 +71,7 @@
         <rooms name="caymouth">
           <room>rooms\map_catun_caytongue_caymouth_house_player_firstfloor</room>
           <room>rooms\map_catun_caytongue_caymouth_house_player_groundfloor</room>
+          <room>rooms\map_catun_caytongue_caymouth</room>
         </rooms>
       </rooms>
     </rooms>
