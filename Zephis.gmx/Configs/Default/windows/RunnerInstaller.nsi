@@ -80,7 +80,7 @@ BrandingText "${APP_NAME}"
 OutFile "${INSTALLER_FILENAME}"
 
 ; The default installation directory
-InstallDir "$PROFILE\${APP_NAME}"
+InstallDir "$PROGRAMFILES\${PRODUCT_PUBLISHER}\${APP_NAME}"
 
 ; Registry key to check for directory (so if you install again, it will 
 ; overwrite the old one automatically)

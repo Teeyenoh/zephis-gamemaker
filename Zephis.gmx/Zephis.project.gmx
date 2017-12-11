@@ -10,20 +10,32 @@
       <sprites name="animal">
         <sprites name="bee">
           <sprites name="bumble">
-            <sprite>sprites\spr_animal_bee_bumble_giant_stand_down</sprite>
+            <sprite>sprites\spr_creature_animal_bee_bumble_giant_stand_down</sprite>
           </sprites>
         </sprites>
       </sprites>
     </sprites>
     <sprites name="item">
-      <sprite>sprites\spr_ingots</sprite>
-      <sprite>sprites\spr_food</sprite>
-      <sprite>sprites\spr_toys</sprite>
+      <sprites name="materials">
+        <sprites name="ingots">
+          <sprite>sprites\spr_item_material_ingot_copper</sprite>
+          <sprite>sprites\spr_item_material_item_tin</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="consumables">
+        <sprites name="food">
+          <sprite>sprites\spr_item_consumable_drink_tea_green</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="toys">
+        <sprite>sprites\spr_item_toy_stuffed_bunny_grey</sprite>
+        <sprite>sprites\spr_item_toy_stuffed_pig_rainbow</sprite>
+      </sprites>
     </sprites>
-    <sprite>sprites\spr_block_up</sprite>
-    <sprite>sprites\spr_block_left</sprite>
     <sprite>sprites\spr_block_down</sprite>
+    <sprite>sprites\spr_block_left</sprite>
     <sprite>sprites\spr_block_right</sprite>
+    <sprite>sprites\spr_block_up</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grass</background>
@@ -36,7 +48,7 @@
       <objects name="animal">
         <objects name="bee">
           <objects name="bumble">
-            <object>objects\obj_animal_bee_bumble_giant</object>
+            <object>objects\obj_creature_animal_bee_bumble_giant</object>
           </objects>
         </objects>
       </objects>

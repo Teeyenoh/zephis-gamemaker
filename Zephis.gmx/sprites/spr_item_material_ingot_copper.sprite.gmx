@@ -20,10 +20,6 @@
   <width>32</width>
   <height>32</height>
   <frames>
-    <frame index="0">images\spr_ingots_0.png</frame>
-    <frame index="1">images\spr_ingots_1.png</frame>
-    <frame index="2">images\spr_ingots_2.png</frame>
-    <frame index="3">images\spr_ingots_3.png</frame>
-    <frame index="4">images\spr_ingots_4.png</frame>
+    <frame index="0">images\spr_item_material_ingot_copper_0.png</frame>
   </frames>
 </sprite>
