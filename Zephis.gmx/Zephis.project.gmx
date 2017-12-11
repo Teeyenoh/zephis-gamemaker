@@ -38,9 +38,9 @@
     <sprite>sprites\spr_block_up</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\grass</background>
-    <background>background\house</background>
-    <background>background\stone_walls</background>
+    <background>background\back_grass</background>
+    <background>background\back_house</background>
+    <background>background\back_wall_stone</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -52,18 +52,27 @@
           </objects>
         </objects>
       </objects>
+      <object>objects\obj_creature</object>
     </objects>
-    <object>objects\obj_camera</object>
+    <object>objects\obj_manager_camera</object>
     <object>objects\obj_player</object>
     <objects name="object">
       <object>objects\obj_block_up</object>
       <object>objects\obj_block_left</object>
       <object>objects\obj_block_down</object>
       <object>objects\obj_block_right</object>
+      <object>objects\obj_roomchange</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\testRoom</room>
+    <rooms name="catun">
+      <rooms name="caytongue">
+        <rooms name="caymouth">
+          <room>rooms\map_catun_caytongue_caymouth_house_player_firstfloor</room>
+          <room>rooms\map_catun_caytongue_caymouth_house_player_groundfloor</room>
+        </rooms>
+      </rooms>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
